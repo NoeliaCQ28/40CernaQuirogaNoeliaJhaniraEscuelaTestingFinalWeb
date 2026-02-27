@@ -46,7 +46,7 @@ public class SauceDemoStepDefinitions {
 
     @Entonces("debería estar en la página de login")
     public void deberiaEstarEnLaPaginaDeLogin() {
-        sauceDemoSteps.verificarSeVisualizaMensajeErrorLogin();
+        sauceDemoSteps.verificarEstaEnLogin();
     }
 
     //  PASOS DE PRODUCTOS
@@ -120,7 +120,7 @@ public class SauceDemoStepDefinitions {
     @Y("procede al checkout con los datos {string} {string} {string}")
     public void procedeAlCheckoutConLosDatos(String nombre, String apellido, String codigoPostal) {
         sauceDemoSteps.procederAlCheckout();
-        sauceDemoSteps.ingresarDatosEnvio(nombre, apellido, codigoPostal);
+        sauceDemoSteps.ingresarDatosEnvioYContinuar(nombre, apellido, codigoPostal);
         sauceDemoSteps.finalizarCompra();
     }
 

@@ -42,7 +42,8 @@ public class LoginPage extends PageObject {
     }
 
     public String obtenerMensajeError() {
-        return errorMessage.waitUntilVisible().getText();
+        errorMessage.waitUntilPresent();
+        return errorMessage.getText();
     }
 
     public boolean seVisualizaMensajeError() {
@@ -58,7 +59,6 @@ public class LoginPage extends PageObject {
         return usernameInput.getValue().isEmpty();
     }
 
-    public boolean estaCampoPasswordVacio() {
-        return passwordInput.getValue().isEmpty();
-    }
-}
+    public boolean estaEnLogin() {
+        return usernameInput.isVisible() && loginButton.isVisible();
+    }}

@@ -195,7 +195,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 26-02-2026 20:24:55</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-02-2026 11:34:24</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -210,7 +210,7 @@
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div class="test-count-title">
-                                    0 tests
+                                    31 tests
 
                                     
 
@@ -238,6 +238,9 @@
                                                     <div class="col-lg-4 col-md-6 col-sm-9">
                                                         <!-- PIE CHART -->
                                                         <h4><i class="bi bi-pie-chart"></i> Overview</h4>
+                                                            <div class="chart-container">
+                                                                <canvas id="resultChart" height="200px"></canvas>
+                                                            </div>
                                                     </div>
                                                     <div class="col-lg-4 col-md-6 col-sm-9">
                                                         <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
@@ -258,6 +261,15 @@
                                             </div>
                                             <div class="container-fluid">
                                                 <div class="row">
+                                                        <div class="col-lg-8 col-md-8 col-sm-9">
+                                                            <!-- High level coverage bar chart -->
+                                                            <div class="chart-container">
+                                                                <h3><i class="bi bi-reception-3"></i> Functional
+                                                                    Coverage Overview</h3>
+                                                                <h4>Features</h4>
+                                                                <canvas id="coverageChart"></canvas>
+                                                            </div>
+                                                        </div>
                                                     <div class="col-lg-4 col-md-4 col-sm-6">
     <div>
         <h3><i class="bi bi-speedometer2"></i> Key Statistics</h3>
@@ -268,60 +280,60 @@
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>0</td>
+                    <td>31</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>0</td>
+                    <td>31</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td></td>
+                    <td>Feb 27, 2026 11:31:04</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td></td>
+                    <td>Feb 27, 2026 11:33:51</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>0ms</td>
+                    <td> 2m 47s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>0ms</td>
+                    <td>2s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>0ms</td>
+                    <td>4s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>0ms</td>
+                    <td>3s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>0ms</td>
+                    <td> 1m 42s</td>
                 </tr>
                 </tbody>
             </table>
@@ -331,9 +343,152 @@
                                                 </div>
                                             </div>
                                             <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-sm-11">
+                                                            <h3>Functional Coverage Details</h3>
+
+
+                                                                    <h4>Features</h4>
+
+                                                                    <table class="table feature-coverage-table"
+                                                                           id="Feature">
+                                                                        <thead>
+                                                                        <tr>
+                                                                            <th>Feature</th>
+                                                                            <th style="width:1em;">Scenarios</th>
+                                                                            <th style="width:1em;">Test&nbsp;Cases</th>
+                                                                            <th style="width:1em;">%&nbsp;Pass</th>
+                                                                            <th style="width:1em;">Result</th>
+                                                                            <th>Coverage</th>
+                                                                        </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="5e096f14fb5202dfff48eb566b35f0eb28b6d7cd87e68a737eca04124cc9caa6.html"> Búsqueda en Google</a>
+                                                                                    </td>
+                                                                                    <td>1</td>
+                                                                                    <td>1</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html"> Compra en SauceDemo</a>
+                                                                                    </td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="30"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                        </div>
+                                                    </div>
 
                                             </div>
                                             <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Tags</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                    <a href="3f47c3e24477912427292586c1d786b49b6507649a4f2df1d8e1c5f78ce4a7d7.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> TEST-1&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                                    <a href="c4962ebb4213b4e3043b9efe0aff60a9bf5c89a8dc7c5e10ee62cf01c2d98fa0.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Happypath&nbsp;&nbsp;&nbsp;17
+                                    </span>
+                                    </a>
+                                    <a href="d0837bff1e6ff64702021a99a9f82794ebda522cc5db8134471add9d2efba72a.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Saucedemo&nbsp;&nbsp;&nbsp;30
+                                    </span>
+                                    </a>
+                                    <a href="e340c47d3d10f995fe5736a99d242f679192acb8c469ccd139af8cf808038301.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Checkout&nbsp;&nbsp;&nbsp;12
+                                    </span>
+                                    </a>
+                                    <a href="8f7817e37da570b55e969b3e220c2eab03e29ab99a48bf9229eddb6952aecab5.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Unhappypath&nbsp;&nbsp;&nbsp;13
+                                    </span>
+                                    </a>
+                                    <a href="6554faca759ace9d1f3c956d7272b6025e5fc4ef363bdae13305f13c60e48129.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Carrito&nbsp;&nbsp;&nbsp;6
+                                    </span>
+                                    </a>
+                                    <a href="c721517496ffad35fe9a5d73f07a9bd15eb22da3cff8328e1d9f7ec70655c6b0.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Login&nbsp;&nbsp;&nbsp;6
+                                    </span>
+                                    </a>
+                                    <a href="65a2df077748f74ccd607af4e962738958bdf672b0d6b0150ae42bcfa475044e.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Smoke&nbsp;&nbsp;&nbsp;6
+                                    </span>
+                                    </a>
+                                    <a href="ecb9e5ef53d414123e7573eb7a4dee1e14cfad26704cc1243dea1d9f8f3fd772.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Productos&nbsp;&nbsp;&nbsp;6
+                                    </span>
+                                    </a>
+                                    <a href="411efb823e0c1fbc0072bb42fbb8df7438014fe12dae33cd3dcca8bf56e2e0ff.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Google&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Context</h5>
+                            <div>
+                                    <a href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Chrome, Windows&nbsp;&nbsp;&nbsp;31
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
                                             </div>
                                         </div>
                                         <div id="tests" class="tab-pane fade">
@@ -349,22 +504,22 @@
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>0</td>
+                    <td>31</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>0ms</td>
+                    <td> 2m 47s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>0</td>
+                    <td>31</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>0ms</td>
+                    <td>2s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -375,30 +530,30 @@
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>0ms</td>
+                    <td>4s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td></td>
+                    <td>Feb 27, 2026 11:31:04</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>0ms</td>
+                    <td>3s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td></td>
+                    <td>Feb 27, 2026 11:33:51</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>0ms</td>
+                    <td> 1m 42s</td>
                 </tr>
                 </tbody>
             </table>
@@ -407,7 +562,518 @@
 
                                                         <h3><i class="bi bi-gear"></i> Automated Scenarios</h3>
 
-                                                            No automated tests were executed
+                                                            <table class="scenario-result-table table"
+                                                                   id="scenario-results">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th>feature</th>
+                                                                    <th class="test-name-column">Scenario</th>
+                                                                    <th>Context</th>
+                                                                    <th>Steps</th>
+                                                                    <th>Started</th>
+                                                                    <th>Total Duration</th>
+                                                                    <th>Result</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="5e096f14fb5202dfff48eb566b35f0eb28b6d7cd87e68a737eca04124cc9caa6.html">Búsqueda en Google</a>
+                                                                        </td>
+                                                                        <td data-order="Abrir la página principal de Google">
+                                                                                    <a href="f72f6b1fd3560c2325926a87016000b5a00d6a1fde0dada2e463779e559b6c73.html">Abrir la página principal de Google</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>1</td>
+                                                                        <td data-order="1772209864">11:31:04</td>
+                                                                        <td>4s 433ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Login exitoso con usuario estándar">
+                                                                                    <a href="760f6bb27bdfc160d1efc1193a7a528cb383c7646622cd7096ae53e9f3caafe9.html">Login exitoso con usuario estándar</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1772209869">11:31:09</td>
+                                                                        <td>3s 181ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Login exitoso y logout">
+                                                                                    <a href="6758adf3a6e9bc0d7033d3d9928be18e05ab28ace431969464b4f26011e06708.html">Login exitoso y logout</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td data-order="1772209874">11:31:14</td>
+                                                                        <td>3s 215ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Ver catálogo de productos después de login">
+                                                                                    <a href="41bee900f634c3e6ef6a019f21c36a27bcd151d397be9174384a60a9c343abce.html">Ver catálogo de productos después de login</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1772209879">11:31:19</td>
+                                                                        <td>3s 399ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Agregar un producto al carrito">
+                                                                                    <a href="47c60bdf4d9508f44cfa40cf7e9c8ce764c4973ff01f87b069d5fd6b40a65d8a.html">Agregar un producto al carrito</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td data-order="1772209884">11:31:24</td>
+                                                                        <td>2s 803ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Agregar múltiples productos al carrito">
+                                                                                    <a href="c1d1681c65cfebf17aa296c0564f67424d3eea23218b2747effd8daea3123d54.html">Agregar múltiples productos al carrito</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td data-order="1772209888">11:31:28</td>
+                                                                        <td>3s 257ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Remover producto desde página de productos">
+                                                                                    <a href="7d41eafee286225f5c60e534272070ee6959b2a20608f23b24aa164476bdd8ee.html">Remover producto desde página de productos</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td data-order="1772209893">11:31:33</td>
+                                                                        <td>3s 473ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Ordenar productos por precio de menor a mayor">
+                                                                                    <a href="3f270bb55402e948adba49e5efd51ce7fb2e10898cb15b62456cedc1d2b225fd.html">Ordenar productos por precio de menor a mayor</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td data-order="1772209899">11:31:39</td>
+                                                                        <td>3s 161ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Ordenar productos alfabéticamente Z a A">
+                                                                                    <a href="a85af394b4b55edf1330ff697de669756cc9e11c91e4ea718bd9c0c976b9ede5.html">Ordenar productos alfabéticamente Z a A</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td data-order="1772209904">11:31:44</td>
+                                                                        <td>4s 025ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Visualizar carrito con productos">
+                                                                                    <a href="a4c12a9f78ffb19de14dcf69a7a659eb46a43c1a2c588fd8a7a1a99f728e04f3.html">Visualizar carrito con productos</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td data-order="1772209909">11:31:49</td>
+                                                                        <td>3s 229ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Remover producto desde el carrito">
+                                                                                    <a href="3eb9f2ebf3e0336619a05fab6f25bcbfc3f106402851e9c520c1b605121d5f33.html">Remover producto desde el carrito</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>7</td>
+                                                                        <td data-order="1772209915">11:31:55</td>
+                                                                        <td>3s 265ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Remover todos los productos del carrito">
+                                                                                    <a href="d1de8a56da5904747689dc6dffc5e20eb63be1695d62baf040cf16d28ddb45a5.html">Remover todos los productos del carrito</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td data-order="1772209920">11:32:00</td>
+                                                                        <td>3s 087ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Continuar comprando desde el carrito">
+                                                                                    <a href="333dc956647b3c846421581d711e24ecf6d46b87b0af7e45fd830492d0e086af.html">Continuar comprando desde el carrito</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td data-order="1772209927">11:32:07</td>
+                                                                        <td>3s 480ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Realizar una compra completa exitosa">
+                                                                                    <a href="0273beb4559c27dd95c823e43c91d7de0c50817f8cffc5eace27dece07417657.html">Realizar una compra completa exitosa</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td data-order="1772209932">11:32:12</td>
+                                                                        <td>4s 048ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Realizar compra con múltiples productos">
+                                                                                    <a href="5130b97c49188b212b31944de531f3551b6774d792dbed46a55aed4847445b5e.html">Realizar compra con múltiples productos</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>8</td>
+                                                                        <td data-order="1772209939">11:32:19</td>
+                                                                        <td>3s 248ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Verificar página de información de checkout">
+                                                                                    <a href="c5250e6bcf9f5aed9aff01b47d27dbc7cc53a7e94d8ed9170e8f429217364ff2.html">Verificar página de información de checkout</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td data-order="1772209946">11:32:26</td>
+                                                                        <td>3s 313ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Verificar página de resumen antes de finalizar">
+                                                                                    <a href="8d82440281bf8743eacf66b01b8307a8905eb494d9507aeae0434ad914362f90.html">Verificar página de resumen antes de finalizar</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>8</td>
+                                                                        <td data-order="1772209951">11:32:31</td>
+                                                                        <td>3s 050ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Volver a productos después de completar compra">
+                                                                                    <a href="a2b994a3a3b670a39240b135a43e0502cff7875bac667f4d4d1f2b012503beb6.html">Volver a productos después de completar compra</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>7</td>
+                                                                        <td data-order="1772209956">11:32:36</td>
+                                                                        <td>3s 493ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Login fallido con usuario bloqueado">
+                                                                                    <a href="e40dfadf12fd47b13cb5022af2d98da6dd633e81e1a0099aaacd199b38e4499c.html">Login fallido con usuario bloqueado</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1772209963">11:32:43</td>
+                                                                        <td>3s 313ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Login fallido con credenciales inválidas">
+                                                                                    <a href="5583f5395a4daba97d3e36dc1d8a10323d8de4fb3cd336826dd10b641c31eb35.html">Login fallido con credenciales inválidas</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1772209967">11:32:47</td>
+                                                                        <td>2s 937ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Login sin ingresar credenciales">
+                                                                                    <a href="f907ca02686964d7bdc775a85b77b788754a457897265508655f016e39105aec.html">Login sin ingresar credenciales</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1772209971">11:32:51</td>
+                                                                        <td>2s 918ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Login solo con usuario sin contraseña">
+                                                                                    <a href="968a1b59439672385bb7a440da18974a649d8ca7f2e87c012724c25e59498aa7.html">Login solo con usuario sin contraseña</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1772209975">11:32:55</td>
+                                                                        <td>3s 118ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Intentar checkout sin productos en el carrito">
+                                                                                    <a href="571ed4d96bd86b09bfe80c8d294685de6a803951b15da1fb679cd52b4ff65321.html">Intentar checkout sin productos en el carrito</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>5</td>
+                                                                        <td data-order="1772209979">11:32:59</td>
+                                                                        <td>3s 217ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Checkout con nombre vacío">
+                                                                                    <a href="c61ae1c3e7d8373e96f71f0d033d66a28755f9b0dba49a2a14b02ef96f1496f5.html">Checkout con nombre vacío</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>8</td>
+                                                                        <td data-order="1772209984">11:33:04</td>
+                                                                        <td>2s 819ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Checkout con apellido vacío">
+                                                                                    <a href="98c74581d41782a21376e27888940edb54e70016956d6e59924abeeb508d66da.html">Checkout con apellido vacío</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>8</td>
+                                                                        <td data-order="1772209989">11:33:09</td>
+                                                                        <td>4s 238ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Checkout con código postal vacío">
+                                                                                    <a href="3415b915cd39fe013b9cf62466578f596fa24ef8c18f8685e292fb4f3c58fa2f.html">Checkout con código postal vacío</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>8</td>
+                                                                        <td data-order="1772209996">11:33:16</td>
+                                                                        <td>3s 099ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Checkout con todos los campos vacíos">
+                                                                                    <a href="36b15f7d615811811de07ed0e3ce7387882ff139567be0edd0be1564a75eabdb.html">Checkout con todos los campos vacíos</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>7</td>
+                                                                        <td data-order="1772210003">11:33:23</td>
+                                                                        <td>3s 319ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Cancelar checkout desde página de información">
+                                                                                    <a href="56819108cc36f67a7dbf155a8bb7cc3e1d864cc3184f7d243c717c435d9e91e2.html">Cancelar checkout desde página de información</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>7</td>
+                                                                        <td data-order="1772210008">11:33:28</td>
+                                                                        <td>3s 215ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Cancelar checkout desde página de resumen">
+                                                                                    <a href="2b85780320880ec025180aa28fca50ce73ac342c76bf9b40c0ab77d0f90e2bf8.html">Cancelar checkout desde página de resumen</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>9</td>
+                                                                        <td data-order="1772210014">11:33:34</td>
+                                                                        <td>2s 793ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Acceder al carrito sin productos agregados">
+                                                                                    <a href="0ab53687899c6fbc0e42cf882203682d8faba1a2e0ebd856dd11e28759ca7433.html">Acceder al carrito sin productos agregados</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td data-order="1772210020">11:33:40</td>
+                                                                        <td>3s 237ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html">Compra en SauceDemo</a>
+                                                                        </td>
+                                                                        <td data-order="Agregar y remover todos los productos antes de checkout">
+                                                                                    <a href="96fe6be132e1f410e536cb8fa4236d0098beab9bbd073ede990ac74657597a29.html">Agregar y remover todos los productos antes de checkout</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>8</td>
+                                                                        <td data-order="1772210028">11:33:48</td>
+                                                                        <td>3s 048ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
 
                                                     </div>
                                                 </div>
@@ -422,6 +1088,79 @@
                                                 </div>
                                             </div>
                                             <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Tags</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                    <a href="3f47c3e24477912427292586c1d786b49b6507649a4f2df1d8e1c5f78ce4a7d7.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> TEST-1&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                                    <a href="c4962ebb4213b4e3043b9efe0aff60a9bf5c89a8dc7c5e10ee62cf01c2d98fa0.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Happypath&nbsp;&nbsp;&nbsp;17
+                                    </span>
+                                    </a>
+                                    <a href="d0837bff1e6ff64702021a99a9f82794ebda522cc5db8134471add9d2efba72a.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Saucedemo&nbsp;&nbsp;&nbsp;30
+                                    </span>
+                                    </a>
+                                    <a href="e340c47d3d10f995fe5736a99d242f679192acb8c469ccd139af8cf808038301.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Checkout&nbsp;&nbsp;&nbsp;12
+                                    </span>
+                                    </a>
+                                    <a href="8f7817e37da570b55e969b3e220c2eab03e29ab99a48bf9229eddb6952aecab5.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Unhappypath&nbsp;&nbsp;&nbsp;13
+                                    </span>
+                                    </a>
+                                    <a href="6554faca759ace9d1f3c956d7272b6025e5fc4ef363bdae13305f13c60e48129.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Carrito&nbsp;&nbsp;&nbsp;6
+                                    </span>
+                                    </a>
+                                    <a href="c721517496ffad35fe9a5d73f07a9bd15eb22da3cff8328e1d9f7ec70655c6b0.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Login&nbsp;&nbsp;&nbsp;6
+                                    </span>
+                                    </a>
+                                    <a href="65a2df077748f74ccd607af4e962738958bdf672b0d6b0150ae42bcfa475044e.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Smoke&nbsp;&nbsp;&nbsp;6
+                                    </span>
+                                    </a>
+                                    <a href="ecb9e5ef53d414123e7573eb7a4dee1e14cfad26704cc1243dea1d9f8f3fd772.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Productos&nbsp;&nbsp;&nbsp;6
+                                    </span>
+                                    </a>
+                                    <a href="411efb823e0c1fbc0072bb42fbb8df7438014fe12dae33cd3dcca8bf56e2e0ff.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Google&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Context</h5>
+                            <div>
+                                    <a href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Chrome, Windows&nbsp;&nbsp;&nbsp;31
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
                                             </div>
                                         </div>
 
@@ -468,7 +1207,7 @@
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [0,0,0,0,0,0,0,0],
+                data: [31,0,0,0,0,0,0,0],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -519,7 +1258,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = " "
+                        var text = "100%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -564,7 +1303,7 @@
             datasets: [
                 {
                     label: 'Automated',
-                    data: [0,0,0,0,0,0,0,0],
+                    data: [31,0,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -647,7 +1386,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','0','0','0','0','0','0','0'],
+                data: ['0','31','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
@@ -698,6 +1437,124 @@
     </script>
     <!-- END DURATION CHART -->
 
+
+
+    <!-- COVERAGE BAR CHART -->
+    <script>
+
+        // The coverage bar chart
+        const coverageChartCtx = document.getElementById('coverageChart');
+
+        // Options define for display value on top of bars
+
+        const coverageReports = [
+            {
+                title: 'Búsqueda en Google',
+                result: 'SUCCESS',
+                link: "5e096f14fb5202dfff48eb566b35f0eb28b6d7cd87e68a737eca04124cc9caa6.html"
+            },
+            {
+                title: 'Compra en SauceDemo',
+                result: 'SUCCESS',
+                link: "13e744f868d87d965a325f718cc49627b98242d014c2e9c8c81c2f8588ee1603.html"
+            },
+        ]
+        const coverageData = {
+            labels: [
+                'Búsqueda en Google',
+                'Compra en SauceDemo',
+            ],
+            datasets: [
+                {
+                    label: ['Passing Tests'],
+                    data: [1,30],
+                    backgroundColor: [ 'rgba(153,204,51,0.5)' ]
+                },
+                {
+                    label: ['Pending Tests'],
+                    data: [0,0],
+                    backgroundColor: [ 'rgba(165, 199, 238, 0.5)' ]
+                },
+                {
+                    label: ['Ignored Tests'],
+                    data: [0,0],
+                    backgroundColor: [ 'rgba(168, 168, 168, 0.5)' ]
+                },
+                {
+                    label: ['Skipped Tests'],
+                    data: [0,0],
+                    backgroundColor: [ 'rgba(238, 224, 152, 0.75)' ]
+                },
+                {
+                    label: ['Aborted Tests'],
+                    data: [0,0],
+                    backgroundColor: [ 'rgba(255, 153, 102, 0.5)' ]
+                },
+                {
+                    label: ['Failed Tests'],
+                    data: [0,0],
+                    backgroundColor: [ 'rgba(255, 22, 49, 0.5)' ]
+                },
+                {
+                    label: ['Errors'],
+                    data: [0,0],
+                    backgroundColor: [ 'rgba(255, 97, 8, 0.5)' ]
+                },
+                {
+                    label: ['Compromised Tests'],
+                    data: [0,0],
+                    backgroundColor: [ 'rgba(255, 104, 255, 0.5)' ]
+                },
+            ]
+        }
+        const coverageOptions = {
+            responsive: true,
+            indexAxis: 'y',
+            // barPercentage: ,
+            barThickness: 'flex',
+            maxBarThickness: 30,
+            minBarLength: 2,
+            skipNull: true,
+            scales: {
+                x: {
+                    stacked: true,
+                },
+                y: {
+                    stacked: true,
+                }
+            },
+            plugins: {
+                // Change options for ALL labels of THIS CHART
+                datalabels: {
+                    color: '#444444',
+                    'font.weight': 'bold'
+                },
+                tooltip: {
+                    enabled: true,
+                    usePointStyle: true,
+                },
+            },
+        }
+
+        const coverageChart = new Chart(coverageChartCtx, {
+            type: 'bar',
+            data: coverageData,
+            options: coverageOptions
+        });
+
+        function coverageClickHandler(click) {
+            const points = coverageChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                if (coverageReports[firstPoint.index].link) {
+                    window.open(coverageReports[firstPoint.index].link, "_self")
+                }
+            }
+        }
+
+        coverageChartCtx.onclick = coverageClickHandler;
+    </script>
+    <!-- END COVERAGE CHART -->
 
 </body>
 </html>

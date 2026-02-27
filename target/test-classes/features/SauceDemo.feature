@@ -8,7 +8,7 @@ Característica: Compra en SauceDemo
   Antecedentes:
     Dado que el usuario abre la página de SauceDemo
 
-  # ==================== HAPPY PATH - LOGIN ====================
+  # HAPPY PATH - LOGIN
   @HAPPYPATH @LOGIN @SMOKE
   Escenario: Login exitoso con usuario estándar
     Cuando el usuario inicia sesión con tipo de usuario "standard"
@@ -20,7 +20,7 @@ Característica: Compra en SauceDemo
     Y el usuario hace logout
     Entonces debería estar en la página de login
 
-  # ==================== HAPPY PATH - PRODUCTOS ====================
+  # HAPPY PATH - PRODUCTOS
   @HAPPYPATH @PRODUCTOS @SMOKE
   Escenario: Ver catálogo de productos después de login
     Cuando el usuario inicia sesión con tipo de usuario "standard"
@@ -60,7 +60,7 @@ Característica: Compra en SauceDemo
     Y ordena los productos por "Name (Z to A)"
     Entonces debería ver los productos ordenados correctamente
 
-  # ==================== HAPPY PATH - CARRITO ====================
+  #  HAPPY PATH - CARRITO
   @HAPPYPATH @CARRITO @SMOKE
   Escenario: Visualizar carrito con productos
     Cuando el usuario inicia sesión con tipo de usuario "standard"
@@ -94,7 +94,7 @@ Característica: Compra en SauceDemo
     Y hace clic en continuar comprando
     Entonces debería ver la página de productos
 
-  # ==================== HAPPY PATH - CHECKOUT ====================
+  # HAPPY PATH - CHECKOUT
   @HAPPYPATH @CHECKOUT @SMOKE
   Escenario: Realizar una compra completa exitosa
     Cuando el usuario inicia sesión con tipo de usuario "standard"
@@ -140,7 +140,7 @@ Característica: Compra en SauceDemo
     Y hace clic en volver a productos
     Entonces debería ver la página de productos
 
-  # ==================== UNHAPPY PATH - LOGIN ====================
+  #  UNHAPPY PATH - LOGIN
   @UNHAPPYPATH @LOGIN @SMOKE
   Escenario: Login fallido con usuario bloqueado
     Cuando el usuario inicia sesión con tipo de usuario "locked"
@@ -161,7 +161,7 @@ Característica: Compra en SauceDemo
     Cuando ingresa solo el usuario sin contraseña
     Entonces debería ver mensaje de error "Password is required"
 
-  # ==================== UNHAPPY PATH - CHECKOUT ====================
+  #  UNHAPPY PATH - CHECKOUT
   @UNHAPPYPATH @CHECKOUT @SMOKE
   Escenario: Intentar checkout sin productos en el carrito
     Cuando el usuario inicia sesión con tipo de usuario "standard"
@@ -226,9 +226,9 @@ Característica: Compra en SauceDemo
     Y ingresa información de envío "Pedro" "López" "88888"
     Y continúa al siguiente paso
     Y cancela el checkout
-    Entonces debería estar en el carrito de compras
+    Entonces debería ver la página de productos
 
-  # ==================== UNHAPPY PATH - CARRITO ====================
+  #  UNHAPPY PATH - CARRITO
   @UNHAPPYPATH @CARRITO
   Escenario: Acceder al carrito sin productos agregados
     Cuando el usuario inicia sesión con tipo de usuario "standard"

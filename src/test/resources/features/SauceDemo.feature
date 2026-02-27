@@ -226,7 +226,7 @@ Característica: Compra en SauceDemo
     Y ingresa información de envío "Pedro" "López" "88888"
     Y continúa al siguiente paso
     Y cancela el checkout
-    Entonces debería estar en el carrito de compras
+    Entonces debería ver la página de productos
 
   #  UNHAPPY PATH - CARRITO
   @UNHAPPYPATH @CARRITO

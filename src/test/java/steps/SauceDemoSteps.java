@@ -70,6 +70,11 @@ public class SauceDemoSteps {
     @Step("Ingresar datos de envío: {0} {1} {2}")
     public void ingresarDatosEnvio(String nombre, String apellido, String codigoPostal) {
         checkoutPage.ingresarDatosCheckout(nombre, apellido, codigoPostal);
+    }
+
+    @Step("Ingresar datos de envío y continuar: {0} {1} {2}")
+    public void ingresarDatosEnvioYContinuar(String nombre, String apellido, String codigoPostal) {
+        checkoutPage.ingresarDatosCheckout(nombre, apellido, codigoPostal);
         checkoutPage.clickContinuar();
     }
 
@@ -121,6 +126,13 @@ public class SauceDemoSteps {
     public void verificarSeVisualizaMensajeErrorLogin() {
         assertThat(loginPage.seVisualizaMensajeError())
                 .as("Debería mostrarse un mensaje de error")
+                .isTrue();
+    }
+
+    @Step("Verificar que está en la página de login")
+    public void verificarEstaEnLogin() {
+        assertThat(loginPage.estaEnLogin())
+                .as("Debería estar en la página de login")
                 .isTrue();
     }
 
