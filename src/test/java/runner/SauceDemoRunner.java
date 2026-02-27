@@ -8,8 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/SauceDemo.feature",
         glue = "stepdefinitions",
-        tags = "@TEST-SAUCE",
-        snippets = CucumberOptions.SnippetType.CAMELCASE
+        tags = "@SAUCEDEMO",
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
+        plugin = {"pretty", "html:target/cucumber-reports.html"}
 )
 public class SauceDemoRunner {
 }

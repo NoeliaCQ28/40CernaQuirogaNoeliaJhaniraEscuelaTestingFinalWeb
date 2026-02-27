@@ -2,6 +2,7 @@ package page;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
@@ -38,5 +39,23 @@ public class CartPage extends PageObject {
 
     public List<WebElementFacade> obtenerProductosEnCarrito() {
         return cartItems;
+    }
+
+    public void removerProducto(String nombreProducto) {
+        for (WebElementFacade item : cartItems) {
+            String itemName = item.find(By.cssSelector(".inventory_item_name")).getText();
+            if (itemName.equals(nombreProducto)) {
+                item.find(By.cssSelector("button[id^='remove']")).click();
+                break;
+            }
+        }
+    }
+
+    public boolean carritoEstaVacio() {
+        return cartItems.isEmpty();
+    }
+
+    public boolean checkoutButtonEstaVisible() {
+        return checkoutButton.isVisible();
     }
 }

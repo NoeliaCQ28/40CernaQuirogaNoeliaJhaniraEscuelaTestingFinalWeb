@@ -1,4 +1,11 @@
 page\GooglePage.class
-runner\GoogleRunner.class
-steps\GoogleSteps.class
+runner\SauceDemoRunner.class
+page\ProductsPage.class
 stepdefinitions\GoogleStepDefinitions.class
+page\LoginPage.class
+runner\GoogleRunner.class
+stepdefinitions\SauceDemoStepDefinitions.class
+steps\SauceDemoSteps.class
+page\CheckoutPage.class
+page\CartPage.class
+steps\GoogleSteps.class

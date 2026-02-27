@@ -20,6 +20,9 @@ public class LoginPage extends PageObject {
     @FindBy(css = "[data-test='error']")
     private WebElementFacade errorMessage;
 
+    @FindBy(css = ".error-button")
+    private WebElementFacade errorButton;
+
     public void ingresarUsuario(String usuario) {
         usernameInput.waitUntilVisible().type(usuario);
     }
@@ -40,5 +43,22 @@ public class LoginPage extends PageObject {
 
     public String obtenerMensajeError() {
         return errorMessage.waitUntilVisible().getText();
+    }
+
+    public boolean seVisualizaMensajeError() {
+        return errorMessage.isVisible();
+    }
+
+    public void limpiarCampos() {
+        usernameInput.clear();
+        passwordInput.clear();
+    }
+
+    public boolean estaCampoUsuarioVacio() {
+        return usernameInput.getValue().isEmpty();
+    }
+
+    public boolean estaCampoPasswordVacio() {
+        return passwordInput.getValue().isEmpty();
     }
 }

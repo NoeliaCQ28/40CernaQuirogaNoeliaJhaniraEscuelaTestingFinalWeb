@@ -21,6 +21,15 @@ public class ProductsPage extends PageObject {
     @FindBy(css = ".shopping_cart_badge")
     private WebElementFacade cartBadge;
 
+    @FindBy(css = ".product_sort_container")
+    private WebElementFacade sortDropdown;
+
+    @FindBy(id = "react-burger-menu-btn")
+    private WebElementFacade menuButton;
+
+    @FindBy(id = "logout_sidebar_link")
+    private WebElementFacade logoutLink;
+
     public boolean estaPaginaProductosVisible() {
         return pageTitle.waitUntilVisible().getText().equals("Products");
     }
@@ -30,6 +39,16 @@ public class ProductsPage extends PageObject {
             String itemName = item.find(By.cssSelector(".inventory_item_name")).getText();
             if (itemName.equals(nombreProducto)) {
                 item.find(By.cssSelector("button[id^='add-to-cart']")).click();
+                break;
+            }
+        }
+    }
+
+    public void removerProductoDelCarrito(String nombreProducto) {
+        for (WebElementFacade item : productItems) {
+            String itemName = item.find(By.cssSelector(".inventory_item_name")).getText();
+            if (itemName.equals(nombreProducto)) {
+                item.find(By.cssSelector("button[id^='remove']")).click();
                 break;
             }
         }
@@ -48,5 +67,32 @@ public class ProductsPage extends PageObject {
 
     public List<WebElementFacade> obtenerListaProductos() {
         return productItems;
+    }
+
+    public void ordenarProductos(String criterio) {
+        sortDropdown.selectByVisibleText(criterio);
+    }
+
+    public void abrirMenu() {
+        menuButton.waitUntilClickable().click();
+    }
+
+    public void hacerLogout() {
+        abrirMenu();
+        logoutLink.waitUntilClickable().click();
+    }
+
+    public String obtenerPrecioProducto(String nombreProducto) {
+        for (WebElementFacade item : productItems) {
+            String itemName = item.find(By.cssSelector(".inventory_item_name")).getText();
+            if (itemName.equals(nombreProducto)) {
+                return item.find(By.cssSelector(".inventory_item_price")).getText();
+            }
+        }
+        return "";
+    }
+
+    public int obtenerCantidadProductosVisibles() {
+        return productItems.size();
     }
 }

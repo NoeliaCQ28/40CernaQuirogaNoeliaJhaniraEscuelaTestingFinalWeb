@@ -33,9 +33,33 @@ public class CheckoutPage extends PageObject {
     @FindBy(css = ".title")
     private WebElementFacade pageTitle;
 
+    @FindBy(css = "[data-test='error']")
+    private WebElementFacade errorMessage;
+
+    @FindBy(id = "back-to-products")
+    private WebElementFacade backButton;
+
+    @FindBy(css = ".summary_subtotal_label")
+    private WebElementFacade subtotalLabel;
+
+    @FindBy(css = ".summary_tax_label")
+    private WebElementFacade taxLabel;
+
     public void ingresarDatosCheckout(String nombre, String apellido, String codigoPostal) {
         firstNameInput.waitUntilVisible().type(nombre);
         lastNameInput.type(apellido);
+        postalCodeInput.type(codigoPostal);
+    }
+
+    public void ingresarNombre(String nombre) {
+        firstNameInput.waitUntilVisible().type(nombre);
+    }
+
+    public void ingresarApellido(String apellido) {
+        lastNameInput.type(apellido);
+    }
+
+    public void ingresarCodigoPostal(String codigoPostal) {
         postalCodeInput.type(codigoPostal);
     }
 
@@ -66,5 +90,33 @@ public class CheckoutPage extends PageObject {
 
     public String obtenerTituloPagina() {
         return pageTitle.waitUntilVisible().getText();
+    }
+
+    public String obtenerMensajeError() {
+        return errorMessage.waitUntilVisible().getText();
+    }
+
+    public boolean seVisualizaMensajeError() {
+        return errorMessage.isVisible();
+    }
+
+    public void volverAProductos() {
+        backButton.waitUntilClickable().click();
+    }
+
+    public boolean estaEnPaginaCheckoutInfo() {
+        return pageTitle.getText().equals("Checkout: Your Information");
+    }
+
+    public boolean estaEnPaginaCheckoutOverview() {
+        return pageTitle.getText().equals("Checkout: Overview");
+    }
+
+    public String obtenerSubtotal() {
+        return subtotalLabel.getText();
+    }
+
+    public String obtenerImpuesto() {
+        return taxLabel.getText();
     }
 }
