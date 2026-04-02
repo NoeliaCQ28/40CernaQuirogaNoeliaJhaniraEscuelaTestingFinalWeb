@@ -42,6 +42,11 @@ public class CartPage extends PageObject {
     }
 
     public void removerProducto(String nombreProducto) {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
         for (WebElementFacade item : cartItems) {
             String itemName = item.find(By.cssSelector(".inventory_item_name")).getText();
             if (itemName.equals(nombreProducto)) {

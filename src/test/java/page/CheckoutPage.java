@@ -46,6 +46,11 @@ public class CheckoutPage extends PageObject {
     private WebElementFacade taxLabel;
 
     public void ingresarDatosCheckout(String nombre, String apellido, String codigoPostal) {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
         firstNameInput.waitUntilVisible().type(nombre);
         lastNameInput.type(apellido);
         postalCodeInput.type(codigoPostal);

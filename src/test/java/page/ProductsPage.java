@@ -35,6 +35,11 @@ public class ProductsPage extends PageObject {
     }
 
     public void agregarProductoAlCarrito(String nombreProducto) {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
         for (WebElementFacade item : productItems) {
             String itemName = item.find(By.cssSelector(".inventory_item_name")).getText();
             if (itemName.equals(nombreProducto)) {
@@ -45,6 +50,11 @@ public class ProductsPage extends PageObject {
     }
 
     public void removerProductoDelCarrito(String nombreProducto) {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
         for (WebElementFacade item : productItems) {
             String itemName = item.find(By.cssSelector(".inventory_item_name")).getText();
             if (itemName.equals(nombreProducto)) {
@@ -59,6 +69,11 @@ public class ProductsPage extends PageObject {
     }
 
     public int obtenerCantidadProductosEnCarrito() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
         if (cartBadge.isPresent()) {
             return Integer.parseInt(cartBadge.getText());
         }
@@ -83,6 +98,11 @@ public class ProductsPage extends PageObject {
     }
 
     public String obtenerPrecioProducto(String nombreProducto) {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
         for (WebElementFacade item : productItems) {
             String itemName = item.find(By.cssSelector(".inventory_item_name")).getText();
             if (itemName.equals(nombreProducto)) {

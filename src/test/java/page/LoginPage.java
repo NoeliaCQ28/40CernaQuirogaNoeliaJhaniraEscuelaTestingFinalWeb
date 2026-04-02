@@ -38,6 +38,11 @@ public class LoginPage extends PageObject {
     public void login(String usuario, String password) {
         ingresarUsuario(usuario);
         ingresarPassword(password);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
         clickLogin();
     }
 
@@ -51,6 +56,11 @@ public class LoginPage extends PageObject {
     }
 
     public void limpiarCampos() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
         usernameInput.clear();
         passwordInput.clear();
     }
