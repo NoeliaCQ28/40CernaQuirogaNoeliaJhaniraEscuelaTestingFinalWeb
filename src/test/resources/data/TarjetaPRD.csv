@@ -1,2 +1,2 @@
-| Tarjeta | Clave | Monto | CuentaCargo | CuentaAbono |
-| 4058000012341234 | 123456 | 5.00 | 1530000000001 | 1530000000002 |
+AMBIENTE,Documento,NumeroTarjeta,Clave
+prd,70758120,4557881447316227,160195

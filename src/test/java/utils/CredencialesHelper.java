@@ -1,7 +1,10 @@
 package utils;
 
+import net.serenitybdd.core.Serenity;
+
 import java.util.HashMap;
 import java.util.Map;
+import net.serenitybdd.core.Serenity;
 
 /**
  * Helper para gestionar credenciales de usuarios de SauceDemo
@@ -46,5 +49,10 @@ public class CredencialesHelper {
             this.username = username;
             this.password = password;
         }
+    }
+
+    // Método auxiliar para guardar variables en sesión con el formato deseado
+    public static void saveVariableOnSession(String key, Object value) {
+        Serenity.setSessionVariable(key).to(value);
     }
 }

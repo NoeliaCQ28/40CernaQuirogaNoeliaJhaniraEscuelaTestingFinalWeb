@@ -23,6 +23,7 @@ public class LoginPage extends PageObject {
     @FindBy(css = ".error-button")
     private WebElementFacade errorButton;
 
+
     public void ingresarUsuario(String usuario) {
         usernameInput.waitUntilVisible().type(usuario);
     }

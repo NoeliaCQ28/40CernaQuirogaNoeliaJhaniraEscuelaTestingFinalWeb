@@ -6,11 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/SauceDemo.feature",
+        features = "src/test/resources/features/",
         glue = "stepdefinitions",
-        tags = "@SAUCEDEMO",
+        tags = "@TransferenciaEntreCuentas",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         plugin = {"pretty", "html:target/cucumber-reports.html"}
 )
-public class SauceDemoRunner {
+
+public class RunnerTest {
 }
