@@ -41,12 +41,12 @@ public class SauceDemoSteps {
     }
 
     @Step("Agregar producto '{0}' al carrito")
-    public void agregarProductoAlCarrito(String nombreProducto) throws InterruptedException {
+    public void agregarProductoAlCarrito(String nombreProducto) {
         productsPage.agregarProductoAlCarrito(nombreProducto);
     }
 
     @Step("Remover producto '{0}' del carrito")
-    public void removerProductoDelCarrito(String nombreProducto) throws InterruptedException {
+    public void removerProductoDelCarrito(String nombreProducto) {
         productsPage.removerProductoDelCarrito(nombreProducto);
     }
 
@@ -56,7 +56,7 @@ public class SauceDemoSteps {
     }
 
     @Step("Verificar cantidad de productos en carrito: {0}")
-    public void verificarCantidadProductosEnCarrito(int cantidad) throws InterruptedException {
+    public void verificarCantidadProductosEnCarrito(int cantidad) {
         assertThat(productsPage.obtenerCantidadProductosEnCarrito())
                 .as("La cantidad de productos en el carrito debería ser " + cantidad)
                 .isEqualTo(cantidad);
@@ -171,7 +171,7 @@ public class SauceDemoSteps {
     }
 
     @Step("Hacer logout")
-    public void hacerLogout() throws InterruptedException {
+    public void hacerLogout() {
         productsPage.hacerLogout();
     }
 

@@ -1,10 +1,9 @@
 package steps;
 
 import net.serenitybdd.annotations.Step;
-import net.serenitybdd.core.pages.PageObject;
+import net.serenitybdd.model.di.ModelInfrastructure;
 import net.serenitybdd.model.environment.EnvironmentSpecificConfiguration;
-import net.serenitybdd.model.di.ModelInfrastructure; // Nuevo import
-import net.thucydides.model.util.EnvironmentVariables; // Este es el correcto ahora
+import net.thucydides.model.util.EnvironmentVariables;
 import page.Login.NewLoginPage;
 
 import java.io.BufferedReader;
@@ -16,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class LoginSteps {
+public class LoginCommerceSteps {
 
 
 
@@ -65,25 +64,26 @@ public class LoginSteps {
         return listData;
     }
 
-    @Step("Cargar página de HomeBanking BCP")
-    public void cargarPaginaHomeBanking() {
+    @Step("Cargar página de Nop Commerce")
+    public void cargarPaginaNopCommerce() {
         // En Serenity 4.x, la forma recomendada de obtener las variables de entorno es:
         EnvironmentVariables environmentVariables = ModelInfrastructure.getEnvironmentVariables();
 
         String url = EnvironmentSpecificConfiguration.from(environmentVariables)
-                .getProperty("url.homebanking");
+                .getProperty("url.commerce");
 
         if (url == null || url.isEmpty()) {
-            throw new IllegalArgumentException("La propiedad 'url.homebanking' no está definida en serenity.conf");
+            throw new IllegalArgumentException("La propiedad 'url.commerce' no está definida en serenity.conf");
         }
 
-        newLoginPage().openUrl(url);
+        String loginUrl = url.endsWith("/") ? url + "login" : url + "/login";
+        newLoginPage().openUrl(loginUrl);
         try {
-            Thread.sleep(30000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
-        System.out.println("URL de HomeBanking abierta: " + url);
+        System.out.println("URL de NopCommerce abierta: " + loginUrl);
     }
 
     @Step("Escribir Tarjeta de Débito")

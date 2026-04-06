@@ -1,24 +1,16 @@
 package stepdefinitions;
 
-import io.cucumber.java.Before;
-import io.cucumber.java.PendingException;
 import io.cucumber.java.Scenario;
-import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import net.serenitybdd.annotations.Steps;
-import steps.LoginSteps;
-import steps.TransferSteps;
+import steps.LoginCommerceSteps;
 
-import java.io.IOException;
-
-import static utils.CredencialesHelper.saveVariableOnSession;
-
-public class LoginStepDefinition {
+public class LoginCommerceStepDefinition {
     @Steps
-    LoginSteps loginSteps;
+    LoginCommerceSteps loginCommerceSteps;
 
-    private LoginSteps loginSteps() {
-        return new LoginSteps();
+    private LoginCommerceSteps loginCommerceSteps() {
+        return new LoginCommerceSteps();
     }
 
     private Scenario myScenario;
@@ -30,9 +22,9 @@ public class LoginStepDefinition {
 //        myScenario = scenario;
 //    }
 
-    @Dado("que estoy en la página de HomeBanking BCP")
-    public void queEstoyEnLaPáginaDeHomeBankingBCP() {
-        loginSteps.cargarPaginaHomeBanking();
+    @Dado("que estoy en la página de Nop Commerce")
+    public void queEstoyEnLaPaginaDeNopCommerce() {
+        loginCommerceSteps.cargarPaginaNopCommerce();
     }
 
 

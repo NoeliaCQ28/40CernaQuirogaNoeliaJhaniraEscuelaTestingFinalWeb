@@ -1,22 +1,31 @@
 package stepdefinitions;
 
-import io.cucumber.java.PendingException;
 import io.cucumber.java.es.Cuando;
+import io.cucumber.java.es.Entonces;
+import io.cucumber.java.es.Y;
 import net.serenitybdd.annotations.Steps;
-import steps.TransferSteps;
+import steps.CommerceSteps;
 
 import java.io.IOException;
 
-public class TransferStepDefinition {
+public class CommerceStepDefinition {
     @Steps
-    TransferSteps transferSteps;
+    CommerceSteps commerceSteps;
 
-    private TransferSteps transferSteps() {
-        return new TransferSteps();
-    }
-
-    @Cuando("ingreso los datos desde: {string}")
+    @Cuando("ingreso los datos de commerce desde: {string}")
     public void ingresoLosDatosDesde(String ruta) throws IOException, InterruptedException {
-        transferSteps.ingresoDatosDesde(ruta);
+        commerceSteps.ingresoDatosDesde(ruta);
     }
+
+    @Y("hago clic en el botón de {string}")
+    public void hagoClicEnElBotonDe(String boton) {
+        commerceSteps.hagoClicEnBoton(boton);
+    }
+
+    @Entonces("debería ver la página de Inicio de Nop Commerce")
+    public void deberiaVerLaPaginaDeInicioDeNopCommerce() {
+        commerceSteps.deberiaVerLaPaginaDeInicio();
+    }
+
+
 }

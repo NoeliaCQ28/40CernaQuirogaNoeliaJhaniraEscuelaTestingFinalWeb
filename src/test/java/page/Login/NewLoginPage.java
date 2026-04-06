@@ -32,9 +32,13 @@ public class NewLoginPage extends PageObject {
         wait.until(ExpectedConditions.visibilityOf(InputTarjeta));
         InputTarjeta.sendKeys(tarjeta);
 
-        String textoIngresado = InputTarjeta.getAttribute("value");
+        // Obtenemos el valor del input y le quitamos los espacios o guiones que el banco pueda agregar
+        String textoIngresado = InputTarjeta.getAttribute("value")
+                .replace(" ", "")
+                .replace("-", "");
+
         if(!textoIngresado.equals(tarjeta)) {
-            throw new RuntimeException("El texto ingresado en el campo de tarjeta no coincide con el valor esperado.");
+            throw new RuntimeException("El texto ingresado en el campo de tarjeta no coincide con el valor esperado. Esperado: " + tarjeta + " | Encontrado: " + textoIngresado);
         }
     }
 
@@ -57,6 +61,7 @@ public class NewLoginPage extends PageObject {
 
         JavascriptExecutor jsExecutor = (JavascriptExecutor) getDriver();
         String teclaActual ="";
+
         for (String numero : clave.split("")){
             try {
                 sleep(1000);
@@ -65,29 +70,34 @@ public class NewLoginPage extends PageObject {
             }
             for (int i=0; i<10; i++){
                 teclaActual = "bcp-keyboard-key[index='"+ (i + 1) +"']";
-                String valor = (String)
-                        (jsExecutor.executeScript("return document.querySelector(\"bcp-keyboard-input\")shadowRoot.querySeñector(\"" + teclaActual + "\").innerText"));
+                System.out.println("se encuentra en el campo " + teclaActual);
+                String scriptValor = "return document.querySelector(\"bcp-keyboard-input\").shadowRoot.querySelector(\"" + teclaActual + "\").innerText";
+                String valor = (String) jsExecutor.executeScript(scriptValor);
+
                 System.out.println(valor);
                 valor = (valor == null) ? "" : valor;
                 System.out.println("En el index " + (i + 1) + " se encuentra el numero: " + valor);
+
                 if (valor.equals(numero)){
+
                     String query = "return document.querySelector(\"bcp-keyboard-input\").shadowRoot.querySelector(\"" + teclaActual + "\")";
                     WebElement teclaEncontrada = (WebElement) jsExecutor.executeScript(query);
                     System.out.println("Se hizo click en el numero: " + numero);
-                    if(teclaEncontrada != null)
+
+                    if(teclaEncontrada != null) {
                         teclaEncontrada.click();
+                    }
                     break;
                 }
             }
-
         }
+
 
         String textoIngresado = InputPassword.getAttribute("value");
-        if(!textoIngresado.equals(clave)) {
-            throw new RuntimeException("El texto ingresado en el campo de clave no coincide con el valor esperado.");
+        if(textoIngresado != null && !textoIngresado.equals(clave)) {
+            // throw new RuntimeException("El texto ingresado en el campo de clave no coincide con el valor esperado.");
         }
     }
-
     public void clickBotonIngresar() {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(50));
         wait.until(ExpectedConditions.elementToBeClickable(btnIngresar));

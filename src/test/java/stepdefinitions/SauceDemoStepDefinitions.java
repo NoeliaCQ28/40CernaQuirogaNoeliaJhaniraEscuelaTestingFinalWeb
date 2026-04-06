@@ -40,7 +40,7 @@ public class SauceDemoStepDefinitions {
     }
 
     @Y("el usuario hace logout")
-    public void elUsuarioHaceLogout() throws InterruptedException {
+    public void elUsuarioHaceLogout() {
         sauceDemoSteps.hacerLogout();
     }
 
@@ -61,12 +61,12 @@ public class SauceDemoStepDefinitions {
     }
 
     @Y("agrega el producto {string} al carrito")
-    public void agregaElProductoAlCarrito(String nombreProducto) throws InterruptedException {
+    public void agregaElProductoAlCarrito(String nombreProducto) {
         sauceDemoSteps.agregarProductoAlCarrito(nombreProducto);
     }
 
     @Y("remueve el producto {string} desde productos")
-    public void remuevelProductoDesdeProductos(String nombreProducto) throws InterruptedException {
+    public void remuevelProductoDesdeProductos(String nombreProducto) {
         sauceDemoSteps.removerProductoDelCarrito(nombreProducto);
     }
 
@@ -87,7 +87,7 @@ public class SauceDemoStepDefinitions {
     }
 
     @Entonces("el carrito debería mostrar {int} productos")
-    public void elCarritoDeberiaMostrarProductos(int cantidad) throws InterruptedException {
+    public void elCarritoDeberiaMostrarProductos(int cantidad) {
         sauceDemoSteps.verificarCantidadProductosEnCarrito(cantidad);
     }
 
